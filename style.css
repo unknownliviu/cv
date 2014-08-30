@@ -1,0 +1,115 @@
+@import "normalize.css";
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  padding: 40px 10px;
+  max-width: 800px;
+  margin: 0px auto;
+}
+
+@media print {
+  body {
+    padding: 0 50px;
+  }
+}
+
+.inline {
+  display: inline-block;
+}
+
+h1, h2 {
+  font-family: Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 1em;
+}
+
+h2 {
+  font-size: 0.8em;
+  width: 100%;
+  border: 0px solid #aaa;
+  border-bottom-width: 1px;
+  padding: 2px 3px;
+  margin-bottom: 4px;
+}
+
+h1:first-letter,
+h2:first-letter {
+  font-size: 1.4em;
+}
+
+h3 {
+  font-size: 1em;
+  margin-top: 1em;
+  margin-bottom: 0px;
+  letter-spacing: 0.3px;
+}
+
+ul {
+  margin: 0px;
+  -webkit-padding-start: 20px;
+  -moz-padding-start: 20px;
+  -o-padding-start: 20px;
+}
+
+li {
+  margin-left: 0px;
+}
+
+a {
+  font-weight: bold;
+}
+
+a:visited {
+  color: blue;
+}
+
+.entry {
+  font-weight: bold;
+  letter-spacing: 0.3px;
+}
+
+.content {
+  margin: 1em 8px;
+  text-align: justify;
+}
+
+.content > h3:first-child{
+  margin-top: 0px;
+  text-align: justify;
+}
+
+.columns {
+  width: 100%;
+  position: relative;
+}
+.columns > *:nth-child(1) {
+  position: absolute;
+  left: 4px;
+  top: 0;
+}
+.columns > *:nth-child(2) {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.columns > *:nth-child(3) {
+  position: absolute;
+  right: 4px;
+  text-align: right;
+  top: 0;
+}
+
+@media (max-width: 500px) {
+  .columns > *:nth-child(1),
+  .columns > *:nth-child(2),
+  .columns > *:nth-child(3) {
+    width: 100%;
+    position: static;
+    text-align: left;
+  }
+}
