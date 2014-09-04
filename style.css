@@ -79,7 +79,6 @@ margin: 0;
 h1 {
 font-size: 1.7em;
 line-height: 2em;
-/*font-weight: 300;*/
 font-weight: 400;
 }
 
@@ -104,7 +103,6 @@ font-weight: 400;
 h3 {
 font-size: 1.0em;
 line-height: 1.2em;
-/*margin-top: 0.7em;*/
 font-weight: 400;
 padding-top: 0.2em;
 }
@@ -112,11 +110,10 @@ padding-top: 0.2em;
 .entry {
 font-weight: 300;
 font-size: 1.1em;
-/*margin-top: 0.2em;*/
 }
 
 .content {
-padding-left: 1em
+padding: 0 1em
 }
 
 .experience {
@@ -140,9 +137,9 @@ margin-bottom: 0;
 
 ul {
 margin: 0;
-padding-left: 1.3em;
+padding: 0 1.3em;
 list-style-type: none;
-/*padding: 0.7em;*/
+text-align: justify
 }
 
 .columns {
