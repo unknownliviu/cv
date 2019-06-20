@@ -1,0 +1,18 @@
+Cover letter
+
+I've written my first line of code over 10 years ago, back in high-school. Soon after, I realised I wanted to have a life in tech.
+
+From the start, I've focused my career around web applications and their environments. What drew me to the web in the first place was the potential to expose my work to the world with ease and hope it's useful.
+
+The better part of my career has been working on e-commerce platforms. As such, I've worked on many interesting things such as catching edge cases in add-to-cart and preventing fraud, building a search engine or building a custom data feed for a 3rd party with threads working in parallel.
+
+I see a lot of value in automated tests, often using Rspec & swagger specs in Rails projects and integrating them as part of the CI pipeline. I've also developed a tool using`locust` for load-testing and used Selenium+Webdriver to simulate real users.
+
+As a back-end developer, I've built many efficient apis using REST or graphql, either as a part of a Rails/ NodeJs app, or as stand-alone AWS lambdas integrated with other AWS resource.
+
+I've also contributed to the devops side of every project I've worked on. Experience ranges from simply deploying to Heroku and doing the configuration to ssh-ing into a linux machine and setting up the Ruby on Rails server to work with Puma, Capistrano, nginx reverse proxy & load balancing, SSL certificates, DNS configuration, fail2ban, etc.
+
+Looking forward, one of the most promising fields in tech is Cloud. In the last year, I've focused a lot of my work on AWS, learning a lot from reading and doing. Here are some examples 
+I've leveraged services such as api gateway, Lambdas, Kinesis Firehose, IAM roles and permissions, dynamodb tables and SNS with custom VPC settings to build standalone microservices. 
+
+I've also used Elasticbeanstalk, ECS or Fargate to deploy Dockerised applications dynamically.
