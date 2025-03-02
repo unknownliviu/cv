@@ -1,286 +1,341 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>
-    Liviu Valentin Maria - CV
-  </title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">  <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no">
-  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600' rel='stylesheet' type='text/css'>
-  <!-- Basehold.it vertical rhythm helper. -->
-  <!--
-  <link rel="stylesheet" href="http://basehold.it/24">
--->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liviu Valentin Maria - CV</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #1E8BC3;
+            --text-color: #22313F;
+            --secondary-color: #6b7280;
+            --border-color: #e5e7eb;
+            --background-color: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background: var(--background-color);
+            font-weight: 300;
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .header h1 {
+            font-size: 2.2rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.05em;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin: 1rem 0;
+        }
+
+        .contact-info a {
+            color: var(--primary-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        a, a:focus, a:visited, a:hover {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .section {
+            margin: 2rem 0;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 500;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            letter-spacing: 0.05em;
+            font-variant: small-caps;
+        }
+
+        .experience-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.5rem;
+        }
+
+        .company {
+            font-weight: 500;
+            color: var(--primary-color);
+        }
+
+        .date {
+            color: var(--secondary-color);
+            font-size: 0.9rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .skills-category h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.8rem;
+            font-weight: 500;
+        }
+
+        .skills-list {
+            list-style: none;
+        }
+
+        .skills-list li {
+            margin-bottom: 0.5rem;
+            position: relative;
+            padding-left: 1rem;
+        }
+
+        .skills-list li::before {
+            content: "•";
+            color: var(--primary-color);
+            position: absolute;
+            left: 0;
+        }
+
+        .location {
+            color: var(--secondary-color);
+            font-size: 0.9rem;
+        }
+
+        .experience-content {
+            padding-left: 1rem;
+        }
+
+        .experience-content ul {
+            list-style: none;
+        }
+
+        .experience-content li {
+            margin-bottom: 0.5rem;
+            position: relative;
+            padding-left: 1rem;
+        }
+
+        .experience-content li::before {
+            content: "•";
+            color: var(--primary-color);
+            position: absolute;
+            left: 0;
+        }
+
+        .last-update {
+            color: var(--secondary-color);
+            font-size: 0.8rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        @media print {
+            body {
+                font-size: 12pt;
+            }
+
+            .container {
+                padding: 0;
+                max-width: 100%;
+            }
+
+            .no-print {
+                display: none;
+            }
+
+            .section-title {
+                border-bottom-color: #999;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .experience-header {
+                flex-direction: column;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
-
 <body>
-  <article>
-    <section>
-      <div class="columns">
-        <div class="personal">
-          Ceahlaului 14 Bl 29 Sc 1 Ap 43
-          <br>
-          Bucharest
+    <div class="container">
+        <header class="header">
+            <h1>Liviu Valentin Maria</h1>
+            <div class="location">based in Bucharest, Romania</div>
+            <div class="contact-info">
+                <a href="tel:+40724236026">
+                    <i class="fas fa-phone"></i>
+                    +40 (724) 23 60 26
+                </a>
+                <a href="mailto:liviu.maria@icloud.com">
+                    <i class="fas fa-envelope"></i>
+                    liviu.maria@icloud.com
+                </a>
+            </div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title">About me</h2>
+            <p>I am both a dedicated developer and a startup enthusiast, passionate about employing the most efficient tools needed to achieve business objectives.</p>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Professional history</h2>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <span class="company">Moda Operandi (US high-end fashion retailer)</span>
+                        <span class="position"> - Software engineer</span>
+                    </div>
+                    <span class="date">June 2018 - June 2019</span>
+                </div>
+                <div class="experience-content">
+                    <ul>
+                        <li>Role began as a back-end engineer on the monolith Ruby on Rails, then pivoted towards the shift to microservices.</li>
+                        <li>Responsibilities ranged from building the CI pipeline, load testing, to owning a microservice, including the logging and infrastructure management.</li>
+                        <li>Tech stach was Ruby on Rails, postgres,terraform - on AWS, using DynamoDb, ECS, VPC configs, iAM, lambdas, etc</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <span class="company">DeinDeal AG (Swiss e-commerce)</span>
+                        <span class="position"> - Software engineer</span>
+                    </div>
+                    <span class="date">March 2015 - May 2018</span>
+                </div>
+                <div class="experience-content">
+                    <ul>
+                        
+                        <li>Had a wide range of responsiblities as it was a small team, mainly focusing on back-end feature development and infrastructure maintainance. Worked on-site.</li>
+                        
+                        <li>The tech stack was Ruby on Rails, nginx, redis, mongodb, postgres & elasticsearch.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <span class="company">Cronian Labs (Romanian startup)</span>
+                        <span class="position"> - Software engineer</span>
+                    </div>
+                    <span class="date">December 2013 - March 2015</span>
+                </div>
+                <div class="experience-content">
+                    <ul>
+                        <li>First professional role. I was responsible for two in-house products: an invoice management platform and a recruitment pipeline system that automated lead generation from GitHub and LinkedIn profiles while tracking candidate progress throughout the interview process. Position was on-site.</li>
+                        <li>Tech stack was Ruby on Rails & Jquery</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Similar structure for other employment entries -->
+
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Tech Stack</h2>
+            <div class="skills-grid">
+                <div class="skills-category">
+                    <h3>Languages</h3>
+                    <ul class="skills-list">
+                        <li>Ruby, shell scripting, JavaScript, TypeScript, Python</li>
+                        <li>SQL, DynamoDb, C, C++, Java, CSS, HTML, php</li>
+                        <li>Basic knowledge of Scala, Swift</li>
+                    </ul>
+                </div>
+
+                <div class="skills-category">
+                    <h3>Frameworks & Libraries</h3>
+                    <ul class="skills-list">
+                        <li>Ruby on Rails</li>
+                        <li>Node, Express, Sinatra, Locust, Graphql, Apache VTL, WebSockets</li>
+                    </ul>
+                </div>
+
+                <div class="skills-category">
+                    <h3>Tools & Services</h3>
+                    <ul class="skills-list">
+                        <li>AWS services: Lambda, EC2, Beanstalk, Kinesis firehose, Cloudwatch, IAM, Api Gateway, Fargate</li>
+                        <li>AWS-related tools: Terraform, Serverless, Cloudformation</li>
+                        <li>Docker, Nginx, Unix-like systems, Brew, ElasticSearch, Redis, Memcached, git</li>
+                        <li>CircleCi, Heroku, NewRelic, Google Cloud</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Formal Education</h2>
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <span class="company">University of Bucharest</span>
+                        <span class="position"> - Bachelors in Computer Science</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Personal life</h2>
+            <p>Father to a one year old. I enjoy reading about history and human nature, travelling, cooking.</p>
+        </section>
+
+        <div class="last-update no-print">
+            Last update: March 2025
         </div>
-
-        <div>
-          <h1 class="inline">
-            Liviu Valentin Maria
-          </h1>
-        </div>
-
-        <div class="personal">
-          <i class='fa fa-phone'></i>
-          <a href="callto:+40724236026">
-            +40 (724) 23 60 26
-          </a>
-          <br>
-          <i class='fa fa-envelope'></i>
-          <a href='mailto:maria.liviu.valentin@gmail.com'>
-            maria.liviu.valentin@gmail.com
-          </a>
-        </div>
-
-      </section>
-
-      <section>
-        <h2>
-          About me
-        </h2>
-      </div>
-      <div class="experience content">
-        <ul>
-          <li>
-            I am both a dedicated developer and a startup enthusiast, passionate about employing the most efficient tools needed to achieve business objectives.
-          </li>
-        </ul>
-      </div>
-
-    </section>
-
-      <section>
-        <h2>
-          Employment
-        </h2>
-        <div class="columns entry">
-          <div>
-            Developer
-          </div>
-          <div>
-            <h3>Moda Operandi</h3>
-          </div>
-
-          <div>
-            June 2018 - June 2019
-          </div>
-
-        </div>
-        <div class="content">
-          <div class="experience">
-            <ul>
-              <li>
-               Started by working on the monolithic Ruby on Rails platform, then shifted focus to designing and building micro-services using AWS.
-                <br>
-                  Work activities ranged from day-to-day technical tasks on the existing systems, to researching how to build, deploy or test new services or configuring CI flows to assisting other teams (such as qa-automation).
-                <br>
-                I've learned a lot on this project, from growing my AWS skills (and interest for devops) to the complexities of working fully remote in a global company.
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="columns entry">
-          <div>
-            Developer
-          </div>
-          <div>
-            <h3>DeinDeal AG</h3>
-          </div>
-
-          <div>
-            March 2015 - May 2018
-          </div>
-
-        </div>
-        <div class="content">
-          <div class="experience">
-            <ul>
-              <li>
-                Worked on the main platform which is built in Ruby on Rails with memcached, redis, mongodb and postgres. Also worked on additional services written in Padrino and Sinatra.
-                <br>
-                  My responsibilities included designing and implementing solutions, collaborating with other teams both remote and on-site.
-                <br>
-                Working in an agile environment with a high emphasis on automatic testing and thorough code reviews, I also contributed to developing and maintaining the server infrastructure with Docker.
-              </li>
-            </ul>
-          </div>
-        </div>
-        <br>
-        <div class="columns entry">
-          <div>
-            Developer
-          </div>
-          <div>
-            <h3>Cronian Labs</h3>
-          </div>
-
-          <div>
-            December 2013 - March 2015
-          </div>
-        </div>
-        <div class="content">
-          <div class="experience">
-            <ul>
-              <li>
-                Worked on multiple RESTful platforms, tools and middleware written in Ruby with Ruby on Rails, elasticsearch, eventmachine, memcached, Redis, et al.
-                <br>
-                Outside of implementing web platforms in Ruby on Rails in a SCRUM development environment, I took responsibility in implementing responsive user interfaces using JavaScript, JQuery, Bootstrap, Backbone.js and moustache.
-                <br>
-                Application deployment has been done both in platform as well as dedicated environments like Heroku and dedicated servers which we set up using Capistrano, nginx, Phusion Passenger.
-              </li>
-            </ul>
-          </div>
-        </div>
-
-      </section>
-
-      <section>
-        <h2>
-          Personal Work
-        </h2>
-      </div>
-      <div class="experience content">
-        <h3>
-          Grapemob <a href="https://grapemob.com/about">grapemob.com</a>
-          (December 2015 - 2017)
-        </h3>
-        <ul>
-          <li>
-            In my spare time, I'd been building a wine crowd-sourcing start-up alongside 2 passionate bussiness partners.
-            <br>
-            I designed the whole system architecture, from the database structure to the REST apis and the deployment process. It's based on the latest stable Ruby on Rails with Postgres. <br>
-            Besides building the website, I also worked closely with an Swift developer in designing the specifications and supporting the implementation of the iOS app (soon to appear on the App Store).
-          </li>
-        </ul>
-      </div>
-
-    </section>
-
-      <section>
-        <h2>
-          Education
-        </h2>
-
-        <div class="columns entry">
-          <div>
-            Bucharest, Romania
-          </div>
-
-          <div>
-            University of Bucharest
-          </div>
-
-          <div>
-            Oct 2012 - July 2015
-          </div>
-
-        </div>
-        <div class="experience content">
-          <h3>
-            Bachelors in Computer Science
-          </h3>
-        </div>
-      </section>
-
-    <section>
-      <h2>
-        Trainings and Conferences
-      </h2>
-
-      <div class="content experience">
-        <h3 class="inline">
-          Attended local conferences:
-        </h3>
-        <span>
-          Talks by <a href="http://softbinator.ro">Softbinator</a>, <a href="http://defcamp.ro">Defcamp</a> 2013 and 2014, Bucharest Ruby Meetup
-        </span>
-      </div>
-
-    </section>
-
-    <section>
-      <h2>
-        Technology Stack:
-      </h2>
-
-      <div class="content experience">
-        <h3>
-          Languages:
-        </h3>
-
-        <ul>
-          <li>
-            Ruby, shell scripting, JavaScript, TypeScript, Python
-          </li>
-          <li>
-             SQL, DynamoDb, C, C++, Java, CSS, HTML, php.
-          </li>
-          <li>
-            Basic knowledge of Scala, Swift
-          </li>
-        </ul>
-      </div>
-      <div class="content experience">
-        <h3>
-          Frameworks and Libraries:
-        </h3>
-        <ul>
-          <li>
-            Ruby on Rails.
-          </li>
-
-          <li>
-            Node, Express, Sinatra, Locust, Graphql, Apache VTL, WebSockets
-          </li>
-        </ul>
-      </div>
-
-      <div class="content experience">
-        <h3>
-          Tools and Services:
-        </h3>
-
-        <ul>
-          <li>AWS services: Lambda, EC2, Beanstalk, Kinesis firehose, Cloudwatch, IAM, Api Gateway, Fargate, etc</li>
-          <li>Aws-related tools: Terraform, Serverless, Cloudformation</li>
-          <li>
-            Docker, Nginx, Unix-like systems, Brew, ElasticSearch, Redis, Memcached, git.
-          </li>
-          <li>CircleCi, Heroku, NewRelic, Google Cloud</li>
-        </ul>
-      </ul>
     </div>
-  </section>
-
-  <section>
-    <h2>
-      Hobbies and Interests
-    </h2>
-
-    <div class="content experience">
-      <p>
-        Besides being up to date with technology, I enjoy reading, movies, cycling and meditating. Always curious about the world.
-      </p>
-    </div>
-  </section>
-  <div class="muted hide-print">
-    <p>
-      Last update:
-      <span class="date">
-        June 2019.
-      </span>
-    </p>
-  </div>
-</article>
 </body>
 </html>
