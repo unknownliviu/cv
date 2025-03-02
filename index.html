@@ -221,13 +221,35 @@
             </div>
         </header>
 
-        <section class="section">
+        <!-- <section class="section">
             <h2 class="section-title">About me</h2>
             <p>I am both a dedicated developer and a startup enthusiast, passionate about employing the most efficient tools needed to achieve business objectives.</p>
-        </section>
+        </section> -->
 
         <section class="section">
             <h2 class="section-title">Professional history</h2>
+
+            <div class="experience-item">
+              <div class="experience-header">
+                  <div>
+                      <span class="company">Grubhub (US food ordering & delivery) </span>
+                      <span class="position"> - Senior Software/Data engineer</span>
+                  </div>
+                  <span class="date">September 2019 - February 2025</span>
+              </div>
+              <div class="experience-content">
+                  <ul>
+                      <li>The role was about expanding and maintianing a data lake that provided the business with critical competitive insights.</li>
+                      <li>Responsibilities ranged from writing and maintaining scrapers,
+                        owning complex ETLs,
+                        open-ended research (such as determining where to focus expensive data gathering based on US population density), 
+                        tuning spark performance,
+                        building automatic anomaly detection & data validation and integrating our pipelines with other teams (like sales and data-science)</li>
+                      <li>Owned a web service enabling business stakeholders to customize restaurant rankings at regional levels.</li>
+                      <li>The tech stack was mainly Python3, Scrapy, Apache PySpark, pydeequ, AWS EMR, EC2, S3, Docker</li>
+                  </ul>
+              </div>
+          </div>
             
             <div class="experience-item">
                 <div class="experience-header">
@@ -239,9 +261,9 @@
                 </div>
                 <div class="experience-content">
                     <ul>
-                        <li>Role began as a back-end engineer on the monolith Ruby on Rails, then pivoted towards the shift to microservices.</li>
+                        <li>The role began as a back-end engineer on the monolith Ruby on Rails, then pivoted towards the shift to microservices.</li>
                         <li>Responsibilities ranged from building the CI pipeline, load testing, to owning a microservice, including the logging and infrastructure management.</li>
-                        <li>Tech stach was Ruby on Rails, postgres,terraform - on AWS, using DynamoDb, ECS, VPC configs, iAM, lambdas, etc</li>
+                        <li>Tech stach was Ruby on Rails, postgres, Docker, terraform - on AWS, using DynamoDb, ECS, VPC configs, iAM, lambdas, etc</li>
                     </ul>
                 </div>
             </div>
@@ -259,7 +281,7 @@
                         
                         <li>Had a wide range of responsiblities as it was a small team, mainly focusing on back-end feature development and infrastructure maintainance. Worked on-site.</li>
                         
-                        <li>The tech stack was Ruby on Rails, nginx, redis, mongodb, postgres & elasticsearch.</li>
+                        <li>The tech stack was Ruby on Rails, Nginx, Redis, Mongodb, Postgres & Elasticsearch.</li>
                     </ul>
                 </div>
             </div>
@@ -275,7 +297,7 @@
                 <div class="experience-content">
                     <ul>
                         <li>First professional role. I was responsible for two in-house products: an invoice management platform and a recruitment pipeline system that automated lead generation from GitHub and LinkedIn profiles while tracking candidate progress throughout the interview process. Position was on-site.</li>
-                        <li>Tech stack was Ruby on Rails & Jquery</li>
+                        <li>Tech stack was Ruby on Rails, Postgres & Jquery</li>
                     </ul>
                 </div>
             </div>
@@ -288,31 +310,28 @@
             <h2 class="section-title">Tech Stack</h2>
             <div class="skills-grid">
                 <div class="skills-category">
-                    <h3>Languages</h3>
+                    <h3>Professional Toolkit</h3>
                     <ul class="skills-list">
-                        <li>Ruby, shell scripting, JavaScript, TypeScript, Python</li>
-                        <li>SQL, DynamoDb, C, C++, Java, CSS, HTML, php</li>
-                        <li>Basic knowledge of Scala, Swift</li>
+                        <li>Python, Apache Pyspark, Scrapy, PyDeequ, Locust</li>
+                        <li>SQL in general, Postgres, Presto, Apache Hive, DynamoDb</li>
+                        <li>Infrastructure as code, with AWS services (S3, lambda, ec2, emr, ecs, iAM, Cloudwatch, etc)</li>
+                        <li>Ruby, Ruby on Rails</li>
+                        <li>bash, elasticsearch, docker, redis, javascript, basic front-end</li>
+                        <li style="font-weight: 400;">I'm comfortable learning anything new.</li>
                     </ul>
                 </div>
 
                 <div class="skills-category">
-                    <h3>Frameworks & Libraries</h3>
+                    <h3>Spare time tech interests</h3>
                     <ul class="skills-list">
-                        <li>Ruby on Rails</li>
-                        <li>Node, Express, Sinatra, Locust, Graphql, Apache VTL, WebSockets</li>
+                        <li>Keeping up with AI advancements.</li>
+                        <li>Run experiments with local llms, such as a basic RAG pipeline with vector search for documents, going through the fast.ai course, etc.</li>
+                        <li>Running a romanian language quizz app for med school applicants.</li>
+                        <li>Self-hosted linux services</li>
                     </ul>
                 </div>
 
-                <div class="skills-category">
-                    <h3>Tools & Services</h3>
-                    <ul class="skills-list">
-                        <li>AWS services: Lambda, EC2, Beanstalk, Kinesis firehose, Cloudwatch, IAM, Api Gateway, Fargate</li>
-                        <li>AWS-related tools: Terraform, Serverless, Cloudformation</li>
-                        <li>Docker, Nginx, Unix-like systems, Brew, ElasticSearch, Redis, Memcached, git</li>
-                        <li>CircleCi, Heroku, NewRelic, Google Cloud</li>
-                    </ul>
-                </div>
+                
             </div>
         </section>
 
@@ -330,7 +349,7 @@
 
         <section class="section">
             <h2 class="section-title">Personal life</h2>
-            <p>Father to a one year old. I enjoy reading about history and human nature, travelling, cooking.</p>
+            <p>Father to a one year old. I enjoy reading about history and human nature, travelling with the family, cooking.</p>
         </section>
 
         <div class="last-update no-print">
